@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+body{
+    font-family: "Comfortaa";
+    margin: 0px;
+    padding: 0px;
+    background-color: #EEF1DA;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #D5E5D5;
+}
+nav a{
+    font-size: 20px;
+    text-decoration: none;
+    color:cadetblue;
+}
+nav a:hover{
+    text-decoration: underline;
+    font-family: "Comfortaa";
+}
+nav img{
+    width: 150px;
+}
+.descripcion{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    padding: 5px 0px 5px 5px;
+    margin: 10px;
+    
+}.contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.contenido img{
+    width: 50%;
+}
+.contenido p{
+    margin: 10px;
+    width: 30%;
+}
+button{
+    font-family: "Comfortaa";
+    background-color: #C7D9DD;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none ;
+    color: rgb(0, 0, 0);
+}
+.contenido button:hover{
+    box-shadow: 5px 5px 5px teal
+}
+.tarjetas{
+    display: flex;
+    justify-content: center;
+}
+.tarjeta{
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.tarjeta:hover{ 
+    box-shadow: 5px 5px 5px #D5E5D5;
+
+}
+footer{
+    padding: 30px;
+    text-align: center;
+    background-color: #D5E5D5;
+}
