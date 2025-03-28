@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 body{
     font-family: "Comfortaa";
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
     background-color: #EEF1DA;
+    position: relative;
+    flex-direction: column;
+    min-height: 100vh;
 }
+.contenedor{
+    position: relative;
+    min-height: 100vh;
+}
+.contenedorpágina{
+    padding-bottom: 2.5rem;
+}
+
 nav{
     display: flex;
     flex-direction: row;
@@ -24,12 +35,12 @@ nav a:hover{
 nav img{
     width: 150px;
 }
+.actual a{
+    text-decoration: underline;
+}
 .descripcion{
     text-align: center;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    width: 600px;
     padding: 5px 0px 5px 5px;
     margin: 10px;
     
@@ -40,11 +51,18 @@ nav img{
     align-items: center;
     border-radius: 10px;
     padding: 5px;
-    border: 1px solid black;
     overflow: hidden;
+    box-shadow: 10px 10px 5px #D5E5D5;
+}
+.contenido:hover{
+    box-shadow: 10px 10px 5px #ADB2D4;
+}
+.catalogo h1{
+    text-align: center;
+    font-size: 75px;
 }
 .contenido img{
-    width: 50%;
+    width: 10%;
 }
 .contenido p{
     margin: 10px;
@@ -65,23 +83,69 @@ button{
 .tarjetas{
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    margin-top: 0px;
+    align-items: top;
 }
 .tarjeta{
     width: 350px;
+    max-width: 18%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    margin-top: 0px;
     margin: 15px;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 5px 5px 5px #D5E5D5;
+}
+.tarjeta img{
+    height: 300px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.card{
+    margin-top: 0px;
 }
 .tarjeta:hover{ 
-    box-shadow: 5px 5px 5px #D5E5D5;
-
+    box-shadow: 10px 10px 5px #ADB2D4;
+}
+.historia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    margin-inline: 100px;
+    overflow: hidden;
+}
+.historia img{
+    width: 300px;
+    border-radius: 10px;
+}
+.historiacontenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    overflow: hidden;
+    box-shadow: 10px 10px 5px #D5E5D5;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
 }
 footer{
     padding: 30px;
     text-align: center;
     background-color: #D5E5D5;
+    position: absolute;
+    bottom: 0;
+    width: 100%;  
 }
